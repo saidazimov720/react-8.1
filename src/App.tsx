@@ -11,12 +11,11 @@ const handleGradientChange = (index:number, newGradient: string) =>{
   newBlocks[index] = newGradient;
   setBlocks(newBlocks);
   console.log(`Block #${index + 1} - Gradient: ${newGradient}`);
-}
+};
+
 
   return (
-    <div className="app" style={{ background: gradient }}>
-      <GradientButton onGradientChange={handleGradientChange} />
-    </div>
+    
   );
 };
 
