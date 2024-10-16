@@ -1,4 +1,5 @@
 .blocks-container {
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -8,7 +9,7 @@
 
 .block {
   width: 800px;
-  height: 800px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
