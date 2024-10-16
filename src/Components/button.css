@@ -1,6 +1,6 @@
 .gradient-button {
     padding: 5px;
-    font-size: 4px;
+    font-size: 25px;
     cursor: pointer;
     border: none;
     background-color: #333;
@@ -14,4 +14,44 @@
   .gradient-button:hover {
     background-color: #555;
   }
+  .blocks-container {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 5px;
+    justify-content: start;
+  }
+  
+  .block {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .add-button {
+    position: relative;
+    right: 200px;
+    /* left: 60px; */
+    padding: 15px;
+    font-size: 24px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #218838;
+  }
+  
   
