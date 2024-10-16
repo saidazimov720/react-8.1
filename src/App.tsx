@@ -14,19 +14,20 @@ const handleGradientChange = (index:number, newGradient: string) =>{
 };
 
 
-  return (
-    <div className="app">
-      <div className="blocks-container">
-        blocks.map((gradient, index) =>(
-          <div key={index} className='block' style={{background: gradient}}>
-            <GradientButton blockIndex={index + 1}
-            onGradientChange={(newGradient) => handleGradientChange(index, newGradient)/>
-          </div>
-        })
-      </div>
-      <button className='add-button' onClick={handleAddBlock}>+</button>
+return (
+  <div className="app">
+    <div className="blocks-container">
+      {blocks.map((gradient, index) => (
+        <div key={index} className="block" style={{ background: gradient }}>
+          <GradientButton 
+            blockIndex={index + 1} 
+            onGradientChange={(newGradient) => handleGradientChange(index, newGradient)} 
+          />
+        </div>
+      ))}
     </div>
-  );
+    <button className="add-button" onClick={handleAddBlock}>+</button>
+  </div>
+);
 };
-
 export default App;
