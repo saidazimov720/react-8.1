@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import GradientButton from './Components/Gradient';
 
-function App() {
+const App = () => {
+  const [gradient, setGradient] = useState<string>('linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255))');
+
+  const handleGradientChange = (newGradient: string) => {
+    setGradient(newGradient);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app" style={{ background: gradient }}>
+      <GradientButton onGradientChange={handleGradientChange} />
     </div>
   );
-}
+};
 
 export default App;
