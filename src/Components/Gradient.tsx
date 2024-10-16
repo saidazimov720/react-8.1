@@ -18,7 +18,7 @@ const GradientButton: React.FC<GradientButtonProps> = ({ onGradientChange, block
 
   return (
     <button className="gradient-button" onClick={handleClick}>
-      Generate Random Gradient for Block #{blockIndex}
+      Generate Random Gradient for Block {blockIndex}
     </button>
   );
 };
