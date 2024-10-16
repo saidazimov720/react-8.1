@@ -6,7 +6,12 @@ const App = () => {
   const handleAddBlock =()=> {
     setBlocks([...blocks , 'linear-gradient(to right, rgb(0,0,0), rgb(255,255,255))']);
   }
-
+const handleGradientChange = (index:number, newGradient: string) =>{
+  const newBlocks = [...blocks];
+  newBlocks[index] = newGradient;
+  setBlocks(newBlocks);
+  console.log(`Block #${index + 1} - Gradient: ${newGradient}`);
+}
 
   return (
     <div className="app" style={{ background: gradient }}>
